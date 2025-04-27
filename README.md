@@ -218,6 +218,26 @@ This helps in **evaluating code efficiency, readability, and maintainability**.
 The Halstead Complexity metrics can be found in the [Halstead](./Halstead/) folder
 
 ---
+How the software quality analysis.py works.
+
+What This Script Does:
+✅ Scans all .php, .js, .html, .css files
+✅ Counts:
+Total lines of code (LOC)
+Unique Operators
+Unique Operands
+Total Operators
+Total Operands
+✅ Calculates:
+Vocabulary (n)
+Length (N)
+Volume (V)
+Difficulty (D)
+Effort (E)
+✅ Asks you:
+How many bugs/defects are found (for defect density calculation)
+✅ Saves:
+All results to software_quality_report.csv automatically.
 
 ## Installation
 1. Clone the repository:
