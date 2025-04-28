@@ -183,14 +183,14 @@ This python script together with its usage can be found in the [LOC](./LOC/) fol
 
 ### **🔹 What is Halstead's Complexity Model?**  
 Halstead’s Complexity Analysis is a **software engineering metric** used to measure **code complexity** by analyzing **operators and operands**.  
-It helps our **Hotel Management System** by:  
+It helps our **Hotel booking System** by:  
 ✅ **Detecting complex code sections** that may need optimization.  
 ✅ **Measuring the maintainability & readability** of the system.  
 ✅ **Estimating development effort** based on logical code operations.  
 
 ---
 
-## 📏 **Halstead’s Metrics Used in Our Hotel Management System**  
+## 📏 **Halstead’s Metrics Used in Our Hotel booking System**  
 | **Metric** | **Formula** | **Meaning in Our Codebase** |
 |------------|------------|---------------------------|
 | **n₁** | Unique Operators | Number of distinct operators in the code. |
@@ -216,27 +216,81 @@ This helps in **evaluating code efficiency, readability, and maintainability**.
 ✅ **Saves results into a CSV file for analysis**  
 
 The Halstead Complexity metrics can be found in the [Halstead](./Halstead/) folder
+---
+**Software cost metrics**
+
+**Effort Estimation Using COCOMO**
+
+**📌 What is COCOMO?**
+COCOMO (COnstructive COst MOdel) is a method we use to estimate how much effort, time, and cost our software project will require, before we start coding.
+
+It helps us plan smarter and avoid underestimating the work.
+
+**✏️ How COCOMO Works (Simple Steps)**
+Estimate the Size
+We guess the size of the project (e.g., number of lines of code).
+
+Classify the Project Type
+We decide if the project is simple (Organic), medium (Semi-Detached), or complex (Embedded).
+
+Calculate Effort
+Using a formula, we calculate how much work (person-months) is needed.
+
+Adjust if Needed
+We consider factors like team experience, project complexity, and tools, to fine-tune the estimate.
+
+**🛠 Why COCOMO is Important for Us**
+Better Planning: It shows us realistically how much time and effort we need.
+
+Avoid Overload: It prevents us from taking on more work than we can handle.
+
+Team Clarity: Everyone understands the work ahead and their roles.
+
+Professional Standards: Using COCOMO shows we follow serious project management practices.
+
+**Final Thought**
+
+"A software engineer without effort estimation is like a builder constructing a skyscraper without checking how many bricks he needs."
 
 ---
+**Measuring External Product Attributes: Software Quality**
+
 How the software quality analysis.py works.
 
 What This Script Does:
+
 ✅ Scans all .php, .js, .html, .css files
+
 ✅ Counts:
+
 Total lines of code (LOC)
+
 Unique Operators
+
 Unique Operands
+
 Total Operators
+
 Total Operands
+
 ✅ Calculates:
+
 Vocabulary (n)
+
 Length (N)
+
 Volume (V)
+
 Difficulty (D)
+
 Effort (E)
+
 ✅ Asks you:
+
 How many bugs/defects are found (for defect density calculation)
+
 ✅ Saves:
+
 All results to software_quality_report.csv automatically.
 
 ## Installation
